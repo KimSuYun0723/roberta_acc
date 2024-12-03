@@ -1,0 +1,82 @@
+{
+  "os": "Linux-5.4.0-198-generic-x86_64-with-glibc2.35",
+  "python": "3.10.12",
+  "startedAt": "2024-12-03T15:50:20.344749Z",
+  "args": [
+    "--model_name_or_path",
+    "roberta-base",
+    "--model_mode",
+    "mc",
+    "--max_seq_length",
+    "512",
+    "--task_name",
+    "custom",
+    "--task_base_path",
+    "/home/ubuntu/storage_16/roberta_acc/EXP_FOL_roberta_16/race",
+    "--output_dir",
+    "/home/ubuntu/storage_16/roberta_acc/EXP_FOL_roberta_16/race_run",
+    "--learning_rate",
+    "1e-5",
+    "--num_train_epochs",
+    "3",
+    "--warmup_ratio",
+    "0.1",
+    "--eval_steps",
+    "500",
+    "--save_steps",
+    "500",
+    "--save_total_limit",
+    "5",
+    "--save_strategy",
+    "steps",
+    "--evaluation_strategy",
+    "steps",
+    "--load_best_model_at_end",
+    "--per_device_train_batch_size",
+    "16",
+    "--per_device_eval_batch_size",
+    "16",
+    "--do_train",
+    "--do_eval",
+    "--do_predict",
+    "--predict_phases",
+    "validation"
+  ],
+  "program": "/home/ubuntu/storage_16/roberta_acc/lrqa/run_lrqa.py",
+  "codePath": "lrqa/run_lrqa.py",
+  "git": {
+    "remote": "https://github.com/KimSuYun0723/roberta_acc.git",
+    "commit": "de449a1f18d5c5e83bb9f8e19178beca939ef678"
+  },
+  "email": "202200737@hufs.ac.kr",
+  "root": "/home/ubuntu/storage_16/roberta_acc/sh_16",
+  "host": "pod-37",
+  "username": "ubuntu",
+  "executable": "/opt/conda/bin/python",
+  "cpu_count": 16,
+  "cpu_count_logical": 32,
+  "gpu": "NVIDIA RTX A5000",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "435476185088",
+      "used": "288825454592"
+    }
+  },
+  "memory": {
+    "total": "134772772864"
+  },
+  "cpu": {
+    "count": 16,
+    "countLogical": 32
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA RTX A5000",
+      "memoryTotal": "25757220864",
+      "cudaCores": 8192,
+      "architecture": "Ampere"
+    }
+  ],
+  "cudaVersion": "12.5"
+}

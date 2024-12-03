@@ -1,13 +1,13 @@
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
-EXP_FOL=/home/ubuntu/storage/bbq_roberta_acc/EXP_FOL_roberta_16
+EXP_FOL=/home/ubuntu/storage_16/roberta_acc/EXP_FOL_roberta_16
 HF_MODEL_NAME=roberta-base
 BATCH_SIZE=16
 
-python lrqa/scripts/race_preproc.py \
-    --data_path ${EXP_FOL}/race
+#python /home/ubuntu/storage_16/roberta_acc/lrqa/scripts/race_preproc.py \
+#    --data_path ${EXP_FOL}/race
     
-python /home/ubuntu/storage/bbq_roberta_acc/lrqa/run_lrqa.py \
+python /home/ubuntu/storage_16/roberta_acc/lrqa/run_lrqa.py \
     --model_name_or_path ${HF_MODEL_NAME} \
     --model_mode mc \
     --max_seq_length 512 \

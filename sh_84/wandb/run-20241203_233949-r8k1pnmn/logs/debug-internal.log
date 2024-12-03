@@ -1,0 +1,8 @@
+{"time":"2024-12-03T23:39:53.443395961+09:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-12-03T23:39:53.443447026+09:00","level":"INFO","msg":"created symlink","path":"/home/ubuntu/storage/roberta_acc/sh_84/wandb/run-20241203_233949-r8k1pnmn/logs/debug-core.log"}
+{"time":"2024-12-03T23:39:53.909714897+09:00","level":"INFO","msg":"created new stream","id":"r8k1pnmn"}
+{"time":"2024-12-03T23:39:53.909768307+09:00","level":"INFO","msg":"stream: started","id":"r8k1pnmn"}
+{"time":"2024-12-03T23:39:53.909822819+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"r8k1pnmn"}
+{"time":"2024-12-03T23:39:53.909854158+09:00","level":"INFO","msg":"sender: started","stream_id":"r8k1pnmn"}
+{"time":"2024-12-03T23:39:53.909870659+09:00","level":"INFO","msg":"handler: started","stream_id":"r8k1pnmn"}
+{"time":"2024-12-03T23:39:58.275521947+09:00","level":"INFO","msg":"Starting system monitor"}

@@ -1,0 +1,26 @@
+/opt/conda/envs/suyun_unlog/lib/python3.11/site-packages/transformers/training_args.py:1568: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ubuntu/storage/roberta_acc/lrqa/run_lrqa.py", line 203, in <module>
+    main()
+  File "/home/ubuntu/storage/roberta_acc/lrqa/run_lrqa.py", line 111, in main
+    model_args, task_args, training_args = parse_args(HfArgumentParser((
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/storage/roberta_acc/lrqa/utils/hf_utils.py", line 13, in parse_args
+    arg_objs = parser.parse_args_into_dataclasses()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/suyun_unlog/lib/python3.11/site-packages/transformers/hf_argparser.py", line 352, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+          ^^^^^^^^^^^^^^^
+  File "<string>", line 134, in __init__
+  File "/opt/conda/envs/suyun_unlog/lib/python3.11/site-packages/transformers/training_args.py", line 1773, in __post_init__
+    self.device
+  File "/opt/conda/envs/suyun_unlog/lib/python3.11/site-packages/transformers/training_args.py", line 2299, in device
+    return self._setup_devices
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/suyun_unlog/lib/python3.11/site-packages/transformers/utils/generic.py", line 60, in __get__
+    cached = self.fget(obj)
+             ^^^^^^^^^^^^^^
+  File "/opt/conda/envs/suyun_unlog/lib/python3.11/site-packages/transformers/training_args.py", line 2172, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.26.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>={ACCELERATE_MIN_VERSION}'`

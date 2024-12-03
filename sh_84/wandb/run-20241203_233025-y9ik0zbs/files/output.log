@@ -1,0 +1,36 @@
+/opt/conda/envs/suyun_unlog/lib/python3.11/site-packages/transformers/training_args.py:1568: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+Some weights of RobertaForMultipleChoice were not initialized from the model checkpoint at roberta-base and are newly initialized: ['classifier.bias', 'classifier.weight', 'roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Generating train split: 87866 examples [00:11, 7736.96 examples/s] 
+Generating train split: 4887 examples [00:00, 5610.15 examples/s]
+Generating train split: 4934 examples [00:00, 7823.14 examples/s]
+Map: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 87866/87866 [00:00<00:00, 228342.16 examples/s]
+Map:  82%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                          | 72000/87866 [06:32<01:26, 183.31 examples/s]
+Traceback (most recent call last):
+  File "/home/ubuntu/storage/roberta_acc/lrqa/run_lrqa.py", line 203, in <module>
+    main()
+  File "/home/ubuntu/storage/roberta_acc/lrqa/run_lrqa.py", line 155, in main
+    tokenized_dataset_dict = get_tokenized_dataset(
+                             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/storage/roberta_acc/lrqa/utils/tokenizer_utils.py", line 133, in get_tokenized_dataset
+    tokenized_examples = standard_examples.map(tokenize_examples, batched=True)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/suyun_unlog/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 560, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/suyun_unlog/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3055, in map
+    for rank, done, content in Dataset._map_single(**dataset_kwargs):
+  File "/opt/conda/envs/suyun_unlog/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3458, in _map_single
+    batch = apply_function_on_filtered_inputs(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/suyun_unlog/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3320, in apply_function_on_filtered_inputs
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/storage/roberta_acc/lrqa/utils/tokenizer_utils.py", line 125, in <lambda>
+    tokenize_examples = lambda examples: tokenize_examples_for_mc_lm_model(examples, tokenizer, max_seq_length,
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/storage/roberta_acc/lrqa/utils/tokenizer_utils.py", line 86, in tokenize_examples_for_mc_lm_model
+    option_token_end_idx = np.array(tokenized_option["attention_mask"]).sum(-1)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

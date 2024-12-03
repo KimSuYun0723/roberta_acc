@@ -1,0 +1,8 @@
+{"time":"2024-12-04T00:50:53.844801146+09:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-12-04T00:50:53.844847799+09:00","level":"INFO","msg":"created symlink","path":"/home/ubuntu/storage_16/roberta_acc/sh_16/wandb/run-20241204_005053-dnlkvvf1/logs/debug-core.log"}
+{"time":"2024-12-04T00:50:53.95859758+09:00","level":"INFO","msg":"created new stream","id":"dnlkvvf1"}
+{"time":"2024-12-04T00:50:53.958690735+09:00","level":"INFO","msg":"stream: started","id":"dnlkvvf1"}
+{"time":"2024-12-04T00:50:53.958753537+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"dnlkvvf1"}
+{"time":"2024-12-04T00:50:53.958758177+09:00","level":"INFO","msg":"sender: started","stream_id":"dnlkvvf1"}
+{"time":"2024-12-04T00:50:53.958823608+09:00","level":"INFO","msg":"handler: started","stream_id":"dnlkvvf1"}
+{"time":"2024-12-04T00:50:54.279335106+09:00","level":"INFO","msg":"Starting system monitor"}

@@ -1,16 +1,16 @@
-EXP_FOL=/home/ubuntu/storage/bbq_roberta_acc/EXP_FOL_roberta_16
+EXP_FOL=/home/ubuntu/storage/roberta_acc/EXP_FOL_roberta_16
 BATCH_SIZE=8
-MODEL_PATH=/home/ubuntu/storage/bbq_roberta_acc/EXP_FOL_roberta_16/race_run/checkpoint-last
+MODEL_PATH=/home/ubuntu/storage/roberta_acc/EXP_FOL_roberta_16/race_run/checkpoint-last
 MAX_SEQ_LENGTH=512
-BBQ_DATA=/home/ubuntu/storage/bbq_roberta_acc/BBQ/data  
+BBQ_DATA=/home/ubuntu/storage/roberta_acc/BBQ/data  
 
-python /home/ubuntu/storage/bbq_roberta_acc/lrqa/scripts/bbq_preproc.py \
+python /home/ubuntu/storage/roberta_acc/lrqa/scripts/bbq_preproc.py \
     --input_data_path=${BBQ_DATA} \
     --data_path ${EXP_FOL}/bbq
 
 for CATEGORY in Age Disability_status Gender_identity Nationality Physical_appearance Race_ethnicity Race_x_SES Race_x_gender Religion SES Sexual_orientation; do
     echo "Evaluating category: ${CATEGORY}"
-    python /home/ubuntu/storage/bbq_roberta_acc/evaluation/eval.py \
+    python /home/ubuntu/storage/roberta_acc/evaluation/eval.py \
         --model_name_or_path ${MODEL_PATH} \
         --data_file ${EXP_FOL}/bbq/${CATEGORY}/validation.jsonl \
         --batch_size ${BATCH_SIZE} \

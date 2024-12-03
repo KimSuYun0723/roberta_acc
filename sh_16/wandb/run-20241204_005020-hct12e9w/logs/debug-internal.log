@@ -1,0 +1,16 @@
+{"time":"2024-12-04T00:50:20.351377201+09:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-12-04T00:50:20.351419003+09:00","level":"INFO","msg":"created symlink","path":"/home/ubuntu/storage_16/roberta_acc/sh_16/wandb/run-20241204_005020-hct12e9w/logs/debug-core.log"}
+{"time":"2024-12-04T00:50:20.470233849+09:00","level":"INFO","msg":"created new stream","id":"hct12e9w"}
+{"time":"2024-12-04T00:50:20.470337529+09:00","level":"INFO","msg":"stream: started","id":"hct12e9w"}
+{"time":"2024-12-04T00:50:20.470376373+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"hct12e9w"}
+{"time":"2024-12-04T00:50:20.470385434+09:00","level":"INFO","msg":"sender: started","stream_id":"hct12e9w"}
+{"time":"2024-12-04T00:50:20.470501937+09:00","level":"INFO","msg":"handler: started","stream_id":"hct12e9w"}
+{"time":"2024-12-04T00:50:20.8400999+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-04T00:50:20.960352378+09:00","level":"INFO","msg":"stream: closing","id":"hct12e9w"}
+{"time":"2024-12-04T00:50:20.96042167+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-04T00:50:20.961777364+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-04T00:50:24.170668933+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-04T00:50:24.395912944+09:00","level":"INFO","msg":"handler: closed","stream_id":"hct12e9w"}
+{"time":"2024-12-04T00:50:24.396026594+09:00","level":"INFO","msg":"sender: closed","stream_id":"hct12e9w"}
+{"time":"2024-12-04T00:50:24.395991532+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"hct12e9w"}
+{"time":"2024-12-04T00:50:24.397389153+09:00","level":"INFO","msg":"stream: closed","id":"hct12e9w"}
